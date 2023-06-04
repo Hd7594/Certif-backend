@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ message: "test" });
+  res.json("test");
 });
 
 app.listen(process.env.PORT, () => {
